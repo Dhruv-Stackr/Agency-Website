@@ -1,0 +1,43 @@
+2026-03-03T10:03:44.519Z [console][debug] [initMessageListener]  --- receive contentScriptInitDone ---
+2026-03-03T10:03:44.519Z [console][debug] [postMessageToContentScript] {"type":"contentscriptFunctionCall","moduleName":"multichainWallet","funcName":"getExtensionInfo","args":[],"callFrom":"inPage","messageId":"ZhTK0dTikxFhtofF5WmEL"}
+2026-03-03T10:03:44.527Z [console][debug] [initMessageListener]  --- receive contentscript message --- {"type":"functionCallResult","returnValue":{"extensionId":"2614789b-2929-43fd-943c-e3e0036e776d","version":"1.9.1","walletLocked":true,"autoSignEnabled":false},"target":"inPage","messageId":"ZhTK0dTikxFhtofF5WmEL","__wallet_sent_from_content_script_msg__":true}
+2026-03-03T10:03:46.443Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload assetPrefix="" globalError={[...]}>
+      <AppDevOverlay state={{nextId:1, ...}} globalError={[...]}>
+        <AppDevOverlayErrorBoundary globalError={[...]} onError={function bound dispatchSetState}>
+          <ReplaySsrOnlyErrors>
+          <DevRootHTTPAccessFallbackBoundary>
+            <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+              <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <Head>
+                    <link>
+                    <script>
+                    <script>
+                    <script>
+                    <RootLayout>
+                      <html data-orchids-id="src/app/la..." data-orchids-name="html" lang="en">
+                        <body
+                          data-orchids-id="src/app/layout.tsx:19:6"
+                          data-orchids-name="body"
+                          className="antialiased"
+-                         data-new-gr-c-s-check-loaded="14.1275.0"
+-                         data-gr-ext-installed=""
+-                         data-new-gr-c-s-loaded="14.1275.0"
+                        >
+                    ...
+        ...
+
