@@ -63,6 +63,23 @@
 
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
+  --animate-star-btn: star-btn calc(var(--duration) * 1s) linear infinite;
+
+  @keyframes star-btn {
+    0%   { offset-distance: 0%; }
+    100% { offset-distance: 100%; }
+  }
+
+  @keyframes spin-around {
+    0%              { transform: translateZ(0) rotate(0); }
+    15%, 35%        { transform: translateZ(0) rotate(90deg); }
+    65%, 85%        { transform: translateZ(0) rotate(270deg); }
+    100%            { transform: translateZ(0) rotate(360deg); }
+  }
+
+  @keyframes shimmer-slide {
+    to { transform: translate(calc(100cqw - 100%), 0); }
+  }
 
   @keyframes accordion-down {
     from {
@@ -197,7 +214,266 @@
   }
 }
 
+/* ── Glow Button ───────────────────────────────────────────── */
+.glow-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  background: #047857;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  cursor: pointer;
+  transition: box-shadow 0.25s ease, transform 0.15s ease, background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  box-shadow: 0 0 18px rgba(16, 185, 129, 0.4), 0 0 50px rgba(16, 185, 129, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  outline: none;
+  white-space: nowrap;
+}
+
+.glow-btn:hover {
+  background: #059669;
+  box-shadow: 0 0 28px rgba(16, 185, 129, 0.6), 0 0 80px rgba(16, 185, 129, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transform: scale(1.03);
+}
+
+.glow-btn:active,
+.glow-btn[data-state="clicked"] {
+  transform: scale(0.97);
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.glow-btn-outline {
+  background: rgba(24, 24, 27, 0.5);
+  color: #a1a1aa;
+  border: 1px solid rgba(63, 63, 70, 0.8);
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.glow-btn-outline:hover {
+  background: rgba(39, 39, 42, 0.8);
+  border-color: rgba(82, 82, 91, 0.9);
+  color: #d4d4d8;
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transform: scale(1.03);
+}
+
+.glow-btn-light {
+  background: #f4f4f5;
+  color: #09090b;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 18px rgba(16, 185, 129, 0.18), 0 2px 4px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.glow-btn-light:hover {
+  background: #ffffff;
+  box-shadow: 0 0 28px rgba(16, 185, 129, 0.3), 0 2px 8px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  transform: scale(1.03);
+}
+
+@keyframes btn-shine-rtl {
+  0%   { transform: translateX(250%); }
+  100% { transform: translateX(-250%); }
+}
+
+.glow-btn-shine {
+  overflow: hidden;
+}
+
+.glow-btn-shine::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.22), transparent);
+  animation: btn-shine-rtl 2.8s ease-in-out infinite;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+/* ── Gradient Pill ─────────────────────────────────────────── */
+@layer base {
+  @property --pos-x {
+    syntax: '<percentage>';
+    initial-value: 11.14%;
+    inherits: false;
+  }
+  @property --pos-y {
+    syntax: '<percentage>';
+    initial-value: 140%;
+    inherits: false;
+  }
+  @property --spread-x {
+    syntax: '<percentage>';
+    initial-value: 150%;
+    inherits: false;
+  }
+  @property --spread-y {
+    syntax: '<percentage>';
+    initial-value: 180.06%;
+    inherits: false;
+  }
+  @property --color-1 {
+    syntax: '<color>';
+    initial-value: #000;
+    inherits: false;
+  }
+  @property --color-2 {
+    syntax: '<color>';
+    initial-value: #08012c;
+    inherits: false;
+  }
+  @property --color-3 {
+    syntax: '<color>';
+    initial-value: #4e1e40;
+    inherits: false;
+  }
+  @property --color-4 {
+    syntax: '<color>';
+    initial-value: #70464e;
+    inherits: false;
+  }
+  @property --color-5 {
+    syntax: '<color>';
+    initial-value: #88394c;
+    inherits: false;
+  }
+  @property --border-angle {
+    syntax: '<angle>';
+    initial-value: 20deg;
+    inherits: true;
+  }
+  @property --border-color-1 {
+    syntax: '<color>';
+    initial-value: hsla(340, 75%, 60%, 0.2);
+    inherits: true;
+  }
+  @property --border-color-2 {
+    syntax: '<color>';
+    initial-value: hsla(340, 75%, 40%, 0.75);
+    inherits: true;
+  }
+  @property --stop-1 {
+    syntax: '<percentage>';
+    initial-value: 37.35%;
+    inherits: false;
+  }
+  @property --stop-2 {
+    syntax: '<percentage>';
+    initial-value: 61.36%;
+    inherits: false;
+  }
+  @property --stop-3 {
+    syntax: '<percentage>';
+    initial-value: 78.42%;
+    inherits: false;
+  }
+  @property --stop-4 {
+    syntax: '<percentage>';
+    initial-value: 89.52%;
+    inherits: false;
+  }
+  @property --stop-5 {
+    syntax: '<percentage>';
+    initial-value: 100%;
+    inherits: false;
+  }
+}
+
+@layer components {
+  .gradient-button {
+    @apply relative appearance-none cursor-pointer;
+    background: radial-gradient(
+      var(--spread-x) var(--spread-y) at var(--pos-x) var(--pos-y),
+      var(--color-1) var(--stop-1),
+      var(--color-2) var(--stop-2),
+      var(--color-3) var(--stop-3),
+      var(--color-4) var(--stop-4),
+      var(--color-5) var(--stop-5)
+    );
+    transition:
+      --pos-x 0.5s, --pos-y 0.5s,
+      --spread-x 0.5s, --spread-y 0.5s,
+      --color-1 0.5s, --color-2 0.5s,
+      --color-3 0.5s, --color-4 0.5s, --color-5 0.5s,
+      --border-angle 0.5s,
+      --border-color-1 0.5s, --border-color-2 0.5s,
+      --stop-1 0.5s, --stop-2 0.5s,
+      --stop-3 0.5s, --stop-4 0.5s, --stop-5 0.5s;
+  }
+
+  .gradient-button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+      var(--border-angle),
+      var(--border-color-1),
+      var(--border-color-2)
+    );
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  /* Emerald pill variant — Relay theme */
+  .emerald-pill {
+    --pos-x: 11.14%;
+    --pos-y: 140%;
+    --spread-x: 150%;
+    --spread-y: 180%;
+    --color-1: #09090b;
+    --color-2: #052e16;
+    --color-3: #064e3b;
+    --color-4: #065f46;
+    --color-5: #047857;
+    --border-angle: 20deg;
+    --border-color-1: hsla(160, 84%, 39%, 0.15);
+    --border-color-2: hsla(160, 84%, 39%, 0.5);
+    --stop-1: 37.35%;
+    --stop-2: 61.36%;
+    --stop-3: 78.42%;
+    --stop-4: 89.52%;
+    --stop-5: 100%;
+  }
+
+  .emerald-pill:hover {
+    --pos-x: 0%;
+    --pos-y: 91.51%;
+    --spread-x: 120%;
+    --spread-y: 103%;
+    --color-1: #10b981;
+    --color-2: #059669;
+    --color-3: #047857;
+    --color-4: #065f46;
+    --color-5: #052e16;
+    --border-angle: 190deg;
+    --border-color-1: hsla(160, 84%, 70%, 0.1);
+    --border-color-2: hsla(160, 84%, 70%, 0.55);
+    --stop-1: 0%;
+    --stop-2: 8.8%;
+    --stop-3: 21.44%;
+    --stop-4: 71.34%;
+    --stop-5: 85.76%;
+  }
+}
+
 @layer utilities {
+  .animate-shimmer-slide {
+    animation: shimmer-slide var(--speed, 3s) ease-in-out infinite alternate;
+  }
+  .animate-spin-around {
+    animation: spin-around calc(var(--speed, 3s) * 2) infinite linear;
+  }
+
   .text-balance {
     text-wrap: balance;
   }
