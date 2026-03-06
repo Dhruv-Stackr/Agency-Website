@@ -70,7 +70,7 @@ const SprintDashboardMock = () => (
     {/* Top bar */}
     <div className="flex items-center justify-between px-3 md:px-5 py-2 md:py-3 border-b border-white/5 shrink-0">
       <div className="flex items-center gap-2 md:gap-3 min-w-0">
-        <span className="text-xs md:text-sm font-semibold text-zinc-100 font-display shrink-0">Relay</span>
+        <img src="/relay%20logo.svg" alt="Relay" className="h-4 w-auto shrink-0" />
         <span className="text-zinc-700">/</span>
         <span className="text-xs md:text-sm text-zinc-500 truncate">Foundation Sprint</span>
       </div>
