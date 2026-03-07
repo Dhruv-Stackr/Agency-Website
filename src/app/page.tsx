@@ -54,7 +54,7 @@ const Navbar = () => {
             shimmerColor="rgba(167, 243, 208, 0.6)"
             shimmerDuration="2.5s"
             className="!px-4 !py-2 text-sm font-semibold font-sans tracking-wide"
-            onClick={() => { window.location.href = "mailto:hello@relay.com"; }}
+            onClick={() => { window.open("https://cal.com/dhruv-sharma-xjz5mg/30min", "_blank"); }}
           >
             Book a sprint fit call
           </ShimmerButton>
@@ -340,7 +340,7 @@ const ProblemValue = () => (
         <p className="text-sm text-zinc-500 mb-5">Sound familiar? Let's fix it in 10 days.</p>
         <GlowButton
           label="Book a sprint fit call"
-          onClick={() => { window.location.href = "mailto:hello@relay.com"; }}
+          onClick={() => { window.open("https://cal.com/dhruv-sharma-xjz5mg/30min", "_blank"); }}
         />
       </motion.div>
     </div>
@@ -488,7 +488,7 @@ const SprintOffers = () => (
       >
         <GlowButton
           label="Book a sprint fit call"
-          onClick={() => { window.location.href = "mailto:hello@relay.com"; }}
+          onClick={() => { window.open("https://cal.com/dhruv-sharma-xjz5mg/30min", "_blank"); }}
         />
       </motion.div>
     </div>
