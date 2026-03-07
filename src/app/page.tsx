@@ -306,7 +306,7 @@ const ProblemValue = () => (
                 <span className="text-red-400/60 w-5 py-2.5 shrink-0 select-none">−</span>
                 <div className="py-2.5 pr-4 flex flex-wrap gap-x-3 min-w-0">
                   <span className="text-red-300/70 shrink-0">{pair.before.text}</span>
-                  <span className="text-zinc-600 text-xs">{pair.before.comment}</span>
+                  <span className="hidden sm:inline text-zinc-600 text-xs">{pair.before.comment}</span>
                 </div>
               </div>
               {/* Added line */}
@@ -315,7 +315,7 @@ const ProblemValue = () => (
                 <span className="text-emerald-400/70 w-5 py-2.5 shrink-0 select-none">+</span>
                 <div className="py-2.5 pr-4 flex flex-wrap gap-x-3 min-w-0">
                   <span className="text-emerald-300 shrink-0">{pair.after.text}</span>
-                  <span className="text-zinc-600 text-xs">{pair.after.comment}</span>
+                  <span className="hidden sm:inline text-zinc-600 text-xs">{pair.after.comment}</span>
                 </div>
               </div>
             </div>
@@ -357,14 +357,14 @@ const SprintOffers = () => (
         viewport={{ once: true, margin: '-80px' }}
         variants={fadeUp}
       >
-        <h2 className="text-4xl sm:text-5xl font-display text-zinc-100 mb-6 tracking-tight">Two sprints. One fixed scope each.</h2>
+        <h2 className="text-3xl sm:text-5xl font-display text-zinc-100 mb-6 tracking-tight">Two sprints. One fixed scope each.</h2>
         <p className="text-zinc-400 text-lg max-w-xl mx-auto">
           Pick the sprint that fits your stage. Everything is scoped upfront and handed off at the end.
         </p>
       </motion.div>
 
       <div className="flex justify-center mb-12">
-        <p className="text-sm text-zinc-500 border border-zinc-800/40 rounded-full px-5 py-2">
+        <p className="text-sm text-zinc-500 border border-zinc-800/40 rounded-2xl px-5 py-2 text-center max-w-sm sm:max-w-none sm:rounded-full">
           No retainer. No account manager. One operator who knows your ecosystem.
         </p>
       </div>
@@ -623,7 +623,7 @@ const FinalCTA = () => {
           variants={stagger}
         >
           <motion.h2
-            className="text-4xl sm:text-5xl lg:text-6xl font-display text-zinc-100 mb-6 tracking-tight text-balance mx-auto"
+            className="text-3xl sm:text-5xl lg:text-6xl font-display text-zinc-100 mb-6 tracking-tight text-balance mx-auto"
             variants={fadeUp}
           >
             Ready to get your story straight?
@@ -634,12 +634,12 @@ const FinalCTA = () => {
           <motion.div className="flex flex-col sm:flex-row justify-center gap-4" variants={fadeUp}>
             <GlowButton
               label="Book a sprint fit call"
-              onClick={() => { window.location.href = "mailto:hello@relay.com"; }}
+              onClick={() => { window.open("https://cal.com/dhruv-sharma-xjz5mg/30min", "_blank"); }}
             />
             <GlowButton
               label="Send a brief"
               className="glow-btn-outline"
-              onClick={() => { window.location.href = "mailto:hello@relay.com"; }}
+              onClick={() => { window.location.href = "mailto:hello@we-relay.studio"; }}
             />
           </motion.div>
         </motion.div>

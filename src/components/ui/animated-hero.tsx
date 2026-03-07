@@ -53,7 +53,7 @@ function AnimatedHero() {
 
         {/* Headline with rotating audience */}
         <motion.h1
-          className="font-display text-5xl sm:text-7xl lg:text-[96px] leading-[0.95] tracking-tight text-zinc-100 mb-8 mx-auto"
+          className="font-display text-4xl sm:text-6xl lg:text-[96px] leading-[0.95] tracking-tight text-zinc-100 mb-6 sm:mb-8 mx-auto"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
@@ -81,7 +81,7 @@ function AnimatedHero() {
 
         {/* Subtext */}
         <motion.p
-          className="text-lg sm:text-xl text-zinc-400 max-w-2xl mx-auto font-sans leading-relaxed mb-12"
+          className="text-base sm:text-xl text-zinc-400 max-w-2xl mx-auto font-sans leading-relaxed mb-10 sm:mb-12"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.25 }}
@@ -99,12 +99,12 @@ function AnimatedHero() {
           <GlowButton
             label="Book a sprint fit call"
             className="glow-btn-shine w-full sm:w-auto"
-            onClick={() => { window.location.href = "mailto:hello@relay.com"; }}
+            onClick={() => { window.open("https://cal.com/dhruv-sharma-xjz5mg/30min", "_blank"); }}
           />
           <GlowButton
             label="Send a brief"
             className="glow-btn-outline w-full sm:w-auto"
-            onClick={() => { window.location.href = "mailto:hello@relay.com"; }}
+            onClick={() => { window.location.href = "mailto:hello@we-relay.studio"; }}
           />
         </motion.div>
 
