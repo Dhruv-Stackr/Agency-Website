@@ -701,7 +701,7 @@ const FinalCTA = () => {
         >
           <img src="/relay%20logo.svg" alt="Relay" className="h-6 w-auto" />
           <div className="flex items-center gap-8 text-sm text-zinc-500">
-            <a href="mailto:hello@relay.com" className="hover:text-zinc-200 transition-colors">hello@relay.com</a>
+            <a href="mailto:hello@we-relay.studio" className="hover:text-zinc-200 transition-colors">hello@we-relay.studio</a>
             <a href="#" className="hover:text-zinc-200 transition-colors">Twitter / X</a>
           </div>
         </motion.footer>
