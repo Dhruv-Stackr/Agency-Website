@@ -29,8 +29,8 @@ function AnimatedHero() {
       ref={ref}
       className="relative w-full pt-28 pb-16 lg:pt-36 lg:pb-24 px-6 flex flex-col items-center text-center overflow-hidden min-h-screen"
     >
-      {/* WebGL shader — deepest layer, toned-down emerald wave */}
-      <WebGLShader className="absolute inset-0 w-full h-full block" />
+      {/* WebGL shader — deepest layer, toned-down emerald wave. Hidden on mobile (wave renders at canvas center which lands behind CTAs on tall portrait screens) */}
+      <WebGLShader className="absolute inset-0 w-full h-full hidden sm:block" />
 
       {/* Grid pattern — sits above shader */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,black,transparent)]" />
