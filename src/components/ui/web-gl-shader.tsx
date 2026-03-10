@@ -27,6 +27,9 @@ export function WebGLShader({ className }: WebGLShaderProps) {
 
   useEffect(() => {
     if (!canvasRef.current) return
+    // Skip initialisation on mobile — the canvas is CSS-hidden but the rAF loop
+    // still runs and hammers the GPU. Bail out early on small screens.
+    if (window.innerWidth < 640) return
 
     const canvas = canvasRef.current
     const { current: refs } = sceneRef

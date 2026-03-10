@@ -36,8 +36,8 @@ function AnimatedHero() {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,black,transparent)]" />
 
       {/* Glow blobs */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[600px] bg-emerald-900/10 blur-[130px] rounded-full pointer-events-none" />
-      <div className="absolute top-1/2 left-1/3 w-[400px] h-[400px] bg-emerald-950/20 blur-[80px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] sm:w-[1000px] sm:h-[600px] bg-emerald-900/10 blur-[60px] sm:blur-[130px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/3 w-[200px] h-[200px] sm:w-[400px] sm:h-[400px] bg-emerald-950/20 blur-[40px] sm:blur-[80px] rounded-full pointer-events-none" />
 
       <motion.div className="max-w-[1000px] z-10" style={{ opacity, y }}>
         {/* Badge */}
