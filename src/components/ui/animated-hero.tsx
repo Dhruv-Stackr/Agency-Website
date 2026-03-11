@@ -115,33 +115,24 @@ function AnimatedHero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <p className="text-sm text-zinc-500 flex flex-wrap justify-center gap-x-6 gap-y-2">
-            <span>✓ Worked with teams at Amazon, Google &amp; Lightspeed</span>
-            <span>✓ Operator-led, no junior handoffs</span>
-            <span>✓ Fixed price, no retainer</span>
-          </p>
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
+            {[
+              "Worked with teams at Amazon, Google & Lightspeed",
+              "Operator-led, no junior handoffs",
+              "Fixed price, no retainer",
+            ].map((item, i) => (
+              <span
+                key={i}
+                className="group inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-[11px] sm:text-xs text-zinc-400 font-medium tracking-wide cursor-default select-none transition-all duration-300 hover:border-emerald-500/30 hover:bg-emerald-950/20 hover:text-zinc-200 hover:scale-[1.04]"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0 transition-all duration-300 group-hover:bg-emerald-400 group-hover:shadow-[0_0_8px_rgba(16,185,129,0.7)]" />
+                {item}
+              </span>
+            ))}
+          </div>
         </motion.div>
       </motion.div>
 
-      {/* Scroll indicator */}
-      <motion.div
-        className="absolute bottom-10 left-1/2 -translate-x-1/2"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2, duration: 0.6 }}
-      >
-        <motion.div
-          className="w-6 h-9 rounded-full border border-zinc-700 flex items-start justify-center p-1.5"
-          animate={{ borderColor: ["rgba(63,63,70,0.6)", "rgba(16,185,129,0.4)", "rgba(63,63,70,0.6)"] }}
-          transition={{ duration: 2.5, repeat: Infinity }}
-        >
-          <motion.div
-            className="w-1 h-2 bg-emerald-500 rounded-full"
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-          />
-        </motion.div>
-      </motion.div>
     </section>
   );
 }
