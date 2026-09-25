@@ -1,0 +1,126 @@
+{
+  "generated": "2026-09-16",
+  "sourceOfTruth": "relay-operator/memory/claims.md CLEARED",
+  "claims": [
+    {
+      "id": "brand-ladder",
+      "stat": "Household names appear in 73% of relevant AI answers; mid-market 44%; niche and small brands 11%",
+      "source": "\"GEO at Scale\", arXiv 2606.20065 · 100K+ prompt responses, 100+ brands, Mar–May 2026 · vendor data",
+      "url": "https://arxiv.org/abs/2606.20065",
+      "asOf": "2026-08-02",
+      "validUntil": "2027-08-02"
+    },
+    {
+      "id": "red-queen",
+      "stat": "When every brand runs the same GEO strategy, individual payoff collapses from +0.802 to +0.007; non-participants receive zero recommendations",
+      "source": "\"Incumbent Advantage\", arXiv 2606.17443, Jun 2026",
+      "url": "https://arxiv.org/abs/2606.17443",
+      "asOf": "2026-08-02",
+      "validUntil": "2027-08-02"
+    },
+    {
+      "id": "jaccard",
+      "stat": "Google organic, AI Overviews and Gemini retrieve substantially different sources: below 0.2 URL-level Jaccard overlap; AI Overviews appear on 51.5% of representative real-user queries",
+      "source": "11,500-query benchmark, arXiv 2604.27790",
+      "url": "https://arxiv.org/abs/2604.27790",
+      "asOf": "2026-09-15",
+      "validUntil": "2027-09-15"
+    },
+    {
+      "id": "block-google-ai",
+      "stat": "Sites blocking Google's AI crawler are significantly less likely to be retrieved by AI Overviews even when otherwise accessible",
+      "source": "arXiv 2604.27790",
+      "url": "https://arxiv.org/abs/2604.27790",
+      "asOf": "2026-08-02",
+      "validUntil": "2027-08-02"
+    },
+    {
+      "id": "google-still-seo",
+      "stat": "Google: optimizing for generative AI search \"is still SEO\"; llms.txt, chunking, AI-rewrites, inauthentic mentions and AI-specific schema named as things not to do",
+      "source": "Google Search Central, 15 May 2026",
+      "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide",
+      "asOf": "2026-08-02",
+      "validUntil": "2027-08-02"
+    },
+    {
+      "id": "llms-txt-zero",
+      "stat": "97% of valid llms.txt files received zero requests in May 2026, across 137,210 domains",
+      "source": "Ahrefs server-log study, Jun 2026 · vendor data",
+      "url": "https://ahrefs.com/blog/llmstxt-study/",
+      "asOf": "2026-08-02",
+      "validUntil": "2026-11-02"
+    },
+    {
+      "id": "agent-ready",
+      "stat": "An agent-ready site scored 89.3% strict task success vs 49.3% for the human-oriented baseline; 3 browser-agent models, 300 runs",
+      "source": "arXiv 2607.12056",
+      "url": "https://arxiv.org/abs/2607.12056",
+      "asOf": "2026-08-02",
+      "validUntil": "2027-08-02"
+    },
+    {
+      "id": "claude-code-markdown",
+      "stat": "Claude Code requested Markdown 76% of the time via Accept-header content negotiation; agent requests (268K) exceeded human pageviews (107K) on a developer-audience site",
+      "source": "Evil Martians server logs, May–Jul 2026",
+      "url": "https://evilmartians.com/chronicles/which-ai-actually-reads-your-site-two-months-of-llm-traffic-measured",
+      "asOf": "2026-08-02",
+      "validUntil": "2026-11-02"
+    },
+    {
+      "id": "seven-runs",
+      "stat": "A single AI-visibility run has a 95% CI of roughly −22% to +122%; standard error falls below 0.10 only at 7 runs per prompt; same-day overlap between identical runs is 0.32–0.43",
+      "source": "Schulte, Bleeker & Kaufmann, \"Don't Measure Once\", St. Gallen, arXiv 2604.07585 · 4 engines, 4 verticals, Jan–Mar 2026",
+      "url": "https://arxiv.org/abs/2604.07585",
+      "asOf": "2026-09-15",
+      "validUntil": "2027-09-15"
+    },
+    {
+      "id": "gsc-ai-report",
+      "stat": "Search Console's generative-AI performance report shows impressions only: no clicks, no CTR, no position",
+      "source": "Google Search Central blog, Jun 2026; worldwide since ~31 Aug 2026",
+      "url": "https://developers.google.com/search/blog/2026/06/gen-ai-performance-reports",
+      "asOf": "2026-09-15",
+      "validUntil": "2026-12-15"
+    },
+    {
+      "id": "pew-clicks",
+      "stat": "Users clicked a traditional result on 8% of visits with an AI summary vs 15% without; 1% clicked a link inside the summary",
+      "source": "Pew Research Center · 900 US adults, 68,879 real Google searches, Mar 2025",
+      "url": "https://www.pewresearch.org/short-reads/2025/07/22/",
+      "asOf": "2026-08-02",
+      "validUntil": "2027-08-02"
+    },
+    {
+      "id": "geo-survey-45",
+      "stat": "Across 45 GEO studies, the only tactics with replicated support are topical relevance and position, extractable statistics, quotes and definitions, and recency; the \"+40%\" gain does not generalise beyond a fixed-context experiment; 57.8% of ChatGPT responses did not activate web search",
+      "source": "Martinez, \"Critical Survey of GEO 2023–2026\", arXiv 2607.14035, Jul 2026",
+      "url": "https://arxiv.org/abs/2607.14035",
+      "asOf": "2026-09-15",
+      "validUntil": "2027-09-15"
+    },
+    {
+      "id": "llm-library-prior",
+      "stat": "LLMs overuse widely-adopted libraries in up to 45% of cases where it isn't required",
+      "source": "arXiv 2503.17181 · 8 production LLMs, BigCodeBench 525 tasks",
+      "url": "https://arxiv.org/abs/2503.17181",
+      "asOf": "2026-08-02",
+      "validUntil": "2027-08-02"
+    },
+    {
+      "id": "clients-conversions",
+      "stat": "Clients rank conversions 44% and traffic 6% as the metric that matters; agencies report monthly 69%, weekly 11%",
+      "source": "AgencyAnalytics 2026 Benchmarks, n=494, fielded Feb–Apr 2026 · vendor data",
+      "url": "https://agencyanalytics.com/agency-benchmarks-2026",
+      "asOf": "2026-08-02",
+      "validUntil": "2027-02-02"
+    },
+    {
+      "id": "openai-crawlers",
+      "stat": "Sites disallowing OAI-SearchBot do not appear in ChatGPT search answers; robots.txt changes reflect in about 24 hours",
+      "source": "OpenAI bot documentation, fetched 15 Sep 2026",
+      "url": "https://developers.openai.com/api/docs/bots",
+      "asOf": "2026-09-15",
+      "validUntil": "2026-12-15"
+    }
+  ]
+}

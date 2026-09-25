@@ -36,3 +36,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.env*
+
+# tooling, research and scratch (not part of the site)
+.agents/
+.claude/
+.work/
+design/
+skills-lock.json
+*.log

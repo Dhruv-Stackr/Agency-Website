@@ -1,0 +1,27 @@
+{
+ "content/pages/dev-tools.md": [
+  "arXiv 2607.12056 · checked 2 Aug 2026",
+  "Evil Martians server logs, May–Jul 2026 · checked 2 Aug 2026",
+  "arXiv 2503.17181 · 8 production LLMs, BigCodeBench 525 tasks · checked 2 Aug 2026",
+  "OpenAI bot documentation, fetched 15 Sep 2026",
+  "Google Search Central, 15 May 2026 · arXiv 2604.27790"
+ ],
+ "content/pages/dashboard.md": [
+  "AgencyAnalytics 2026 Benchmarks, n=494, fielded Feb–Apr 2026 · tool-vendor figure"
+ ],
+ "content/pages/home.md": [
+  "11,500-query benchmark, arXiv 2604.27790 · checked 15 Sep 2026",
+  "Pew Research Center · 68,879 real Google searches · Mar 2025 · checked 2 Aug 2026",
+  "\"GEO at Scale\", arXiv 2606.20065 · 100K+ responses, 100+ brands · tool-vendor figure · checked 2 Aug 2026",
+  "\"GEO at Scale\", arXiv 2606.20065, as above",
+  "Google Search Central, AI features guide, as read 16 Sep 2026"
+ ],
+ "content/pages/choose.md": [
+  "Google Search Central, 15 May 2026",
+  "arXiv 2604.07585",
+  "Google Search Central, AI features guide, as read 16 Sep 2026",
+  "siegemedia.com business form · victorious.com, both as read 2 Sep 2026",
+  "AgencyAnalytics 2026 Benchmarks, n=494 · tool-vendor figure",
+  "NP Digital practitioner survey, April 2026, n=200, via the 2 Sep 2026 research file; tool-vendor figure"
+ ]
+}
