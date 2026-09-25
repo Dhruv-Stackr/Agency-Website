@@ -14,7 +14,9 @@ for (const c of reg.claims) {
   else if (days <= 14) console.warn(`claims: ${c.id} expires in ${days} days (${c.validUntil})`);
 }
 
-const files = [...fs.readdirSync("content/pages").map((f) => `content/pages/${f}`), ...fs.readdirSync("content/notes").map((f) => `content/notes/${f}`)];
+// A content folder may be absent (git keeps no empty directories; notes were retired on 17 Sep 2026).
+const listDir = (d) => (fs.existsSync(d) ? fs.readdirSync(d).map((f) => `${d}/${f}`) : []);
+const files = [...listDir("content/pages"), ...listDir("content/notes")];
 // Sources live in content/sources.json (one list per file) and render once, on /method#sources. A page that carries a
 // statistic must have a sources entry; every sources entry must name a study, sample or date.
 const sources = JSON.parse(fs.readFileSync("content/sources.json", "utf8"));
