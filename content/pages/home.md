@@ -8,9 +8,9 @@ description: For any business in India that wants to be found. Be the business G
 
 Your next customer is searching right now, on Google and inside an AI answer. Relay's job is to get you named there, turn that into enquiries, bookings and orders, and show you the number every week.
 
-[Check my website free](#check)
+[Get my free audit](#check)
 
-<!-- hero tool: LiveCheck. "Type your website. In ten seconds, see how Google and AI introduce you." -->
+<!-- hero tool: AuditRequest. "Get a free written audit: how Google and AI introduce your business, and the first three fixes." -->
 
 ## Half of the searches your customers make now end in an answer, not a click.
 
@@ -99,6 +99,6 @@ Yes. The work log, what changed and why, and the numbers, any hour. And a writte
 **What if we already have an agency?**
 Then a month beside them. The findings get measured; the account moves only if the findings prove out.
 
-## Type your website. See what Google and AI say about you in ten seconds.
+## Send your website. Get a written audit in {AUDIT_TURNAROUND}.
 
-[Check my website free](#check)
+[Get my free audit](#check)

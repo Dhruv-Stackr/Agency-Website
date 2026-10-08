@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import LogoWall from "@/components/LogoWall";
-import LiveCheck from "@/components/LiveCheck";
+import AuditRequest from "@/components/AuditRequest";
 import Magnetic from "@/components/Magnetic";
 import { Story } from "@/components/Story";
 import HundredCustomers from "@/components/HundredCustomers";
@@ -57,11 +57,11 @@ export default function Home() {
     <>
       <Nav current="/" />
       <main id="main">
-        <MarginIndex darkIds={[storySec.id]} items={[{ id: "check", label: "Check" }, { id: storySec.id, label: "The search" }, { id: hundredSec.id, label: "100 customers" }, { id: leversSec.id, label: "The levers" }, { id: dashSec.id, label: "Your dashboard" }, { id: processSec.id, label: "The month" }, { id: benefitsSec.id, label: "What you get" }]} />
+        <MarginIndex darkIds={[storySec.id]} items={[{ id: "check", label: "Free audit" }, { id: storySec.id, label: "The search" }, { id: hundredSec.id, label: "100 customers" }, { id: leversSec.id, label: "The levers" }, { id: dashSec.id, label: "Your dashboard" }, { id: processSec.id, label: "The month" }, { id: benefitsSec.id, label: "What you get" }]} />
         <section className="hero hero-v3"><div className="wrap">
           <HeroText h1={r.h1} ledeHtml={heroLede} cta="" ctaHref="#check" />
           <ChatDemo />
-          <Spotlight><LiveCheck /></Spotlight>
+          <Spotlight><AuditRequest /></Spotlight>
         </div></section>
         <LogoWall />
 

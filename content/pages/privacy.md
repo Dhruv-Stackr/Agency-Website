@@ -10,6 +10,8 @@ Short, because there is not much to say.
 
 ## What this site collects.
 
+**If you ask for the free written audit**, we keep your email and website address to prepare it, send it as a private link, and follow up once. The private link records when it is opened and which pages are read, so we know it reached you.
+
 **If you book a call or write to us**, we keep your name, email, phone number, website address and whatever you tell us about your business, in order to prepare for and follow up on the conversation. We keep it for as long as we are talking, and for twelve months after, unless you ask sooner.
 
 **Analytics.** {ANALYTICS_STATEMENT}
@@ -26,4 +28,4 @@ Ask us what we hold about you, ask us to correct it, or ask us to delete it, and
 
 We operate from Gurugram, India, and handle personal data in line with India's Digital Personal Data Protection framework as its rules come into force.
 
-Last updated 24 September 2026.
+Last updated 8 October 2026.

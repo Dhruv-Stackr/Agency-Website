@@ -20,7 +20,8 @@ export function fill(text: string): string {
   return text
     .replaceAll("{CONTACT_EMAIL}", site.contactEmail)
     .replaceAll("{ANALYTICS_STATEMENT}", site.analyticsStatement)
-    .replaceAll("{BOOKING_URL}", site.bookingUrl);
+    .replaceAll("{BOOKING_URL}", site.bookingUrl)
+    .replaceAll("{AUDIT_TURNAROUND}", site.auditTurnaround);
 }
 
 export function loadDoc(kind: "page" | "note", slug: string): Doc | null {

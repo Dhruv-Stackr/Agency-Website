@@ -283,6 +283,13 @@ button.txt:hover{text-decoration-color:var(--ink)}button.txt:disabled{color:var(
 .check-help{font-family:var(--mono);font-size:12px;color:var(--ash-text);margin:12px 0 0}
 .check .err{font-family:var(--mono);font-size:12.5px;color:var(--red);margin:12px 0 0}
 @media (max-width:600px){.check-row{grid-template-columns:1fr}.check-row .btn{padding:14px}}
+.check-row.two{grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto;max-width:980px}
+@media (max-width:760px){.check-row.two{grid-template-columns:1fr}.check-row.two .btn{padding:14px}}
+.check .hp{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+.check-done{max-width:860px}
+.check-done p{font-size:17px;max-width:62ch;margin:0 0 14px}
+.check-done .cta{display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin-top:18px}
+.check-done button.link{background:none;border:0;padding:0 0 2px;font:inherit;font-size:15px;color:var(--ink);border-bottom:1px solid var(--ash);cursor:pointer}
 .check-result{margin-top:26px;max-width:860px}
 .serp{border:1px solid var(--hair);background:#fff;padding:16px 18px 14px;margin-bottom:14px}
 .serp-eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ash-text);margin-bottom:10px}

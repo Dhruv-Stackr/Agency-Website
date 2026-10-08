@@ -19,9 +19,9 @@ For any Indian business that wants to be found. SEO and AI search, Google and Me
 
 **"The report had numbers nobody could explain."** Every number in your dashboard has a source and a date. The monthly page is written for the owner, not for the agency.
 
-## See how Google and AI introduce you, in ten seconds.
+## Get a written audit of how Google and AI introduce you.
 
-Type your website and seven checks run live: the two lines a search result quotes first, which AI crawlers may read you, how heavy your homepage is on a phone, and four more. That is the first two minutes of the audit call.
+Send your website and email. Within {AUDIT_TURNAROUND} you get a short written audit as a private link: what your customers see when they search for what you sell, what is in the way, and the first three fixes. It is the start of the audit call, done in writing.
 
 ## Month one is the audit. Then the plan runs where you can see it.
 

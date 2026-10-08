@@ -45,3 +45,6 @@ next-env.d.ts
 design/
 skills-lock.json
 *.log
+
+# local store for the free-audit form in development
+.data/

@@ -5,7 +5,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import LogoWall from "@/components/LogoWall";
 import IntakeForm from "@/components/IntakeForm";
-import LiveCheck from "@/components/LiveCheck";
+import AuditRequest from "@/components/AuditRequest";
 import ChatDemo from "@/components/ChatDemo";
 import DashboardScene from "@/components/DashboardScene";
 import Benefits from "@/components/Benefits";
@@ -77,7 +77,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         replace={{ "/owners tell us": <ComplaintCards items={readItems("india", /owners tell us/)} />, "/What changes for your business": <Benefits />, "/Where we are": <AddressCard email={email} /> }}
         transform={{ "/Month one is the audit": stripList }}
         before={{ "/any business that wants to be found": <WhoCards />, "/Month one is the audit": <StepsWithIcons steps={readSteps("india", /Month one is the audit/)} icons={["phone", "doc", "bolt", "eye"]} /> }}
-        after={{ "/introduce you": <Spotlight><LiveCheck /></Spotlight> }} />;
+        after={{ "/introduce you": <Spotlight><AuditRequest /></Spotlight> }} />;
       break;
     case "dev-tools":
       scene = <Terminal />;

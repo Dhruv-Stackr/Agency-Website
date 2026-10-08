@@ -14,6 +14,9 @@ export const site = {
   analyticsStatement:
     "This site runs no analytics today: no Google Analytics, no cookies set by us, no visitor tracking. If we add measurement, this page will say what is collected and why.",
   cta: "Book the free 20-minute audit call",
+  // The free written audit (AuditRequest form): the promise shown on the site and the working days the due date counts.
+  auditTurnaround: "two working days",
+  auditTurnaroundDays: 2,
   nav: [
     { label: "Services", href: "/services" },
     { label: "Dashboard", href: "/dashboard" },
