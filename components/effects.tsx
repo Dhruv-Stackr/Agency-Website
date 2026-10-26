@@ -27,7 +27,8 @@ export function SplitHeading({ text, as: Tag = "h2", className }: { text: string
 }
 
 // Pinned horizontal track: the wrapper pins while the inner track pans. The canonical Awwwards move.
-export function HorizontalPan({ children, className }: { children: React.ReactNode; className?: string }) {
+// intro (the section heading) sits inside the pinned element, so the side scroll starts with the heading still on screen.
+export function HorizontalPan({ children, className, intro }: { children: React.ReactNode; className?: string; intro?: React.ReactNode }) {
   const wrap = useRef<HTMLDivElement>(null); const track = useRef<HTMLDivElement>(null);
   const reduce = useReduced();
   useEffect(() => {
@@ -40,7 +41,7 @@ export function HorizontalPan({ children, className }: { children: React.ReactNo
     });
     return () => mm.revert();
   }, [reduce]);
-  return <section ref={wrap} className={`hpan ${className || ""}`}><div ref={track} className="hpan-track">{children}</div></section>;
+  return <section ref={wrap} className={`hpan ${className || ""}`}>{intro}<div ref={track} className="hpan-track">{children}</div></section>;
 }
 
 // Sticky stack: each card pins at the top; as the next arrives, the previous scales down and dims.

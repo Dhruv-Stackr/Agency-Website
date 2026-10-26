@@ -76,8 +76,7 @@ export default function Home() {
         </div></section>
 
         <section className="sec sec-levers-h" id={leversSec.id}>
-          <div className="wrap"><SplitHeading text={leversSec.heading} /></div>
-          <HorizontalPan>
+          <HorizontalPan intro={<div className="wrap"><SplitHeading text={leversSec.heading} /></div>}>
             {levers.map((l, i) => (
               <div className="hpan-panel" key={l.name}>
                 <div><div className="hp-n">{String(i + 1).padStart(2, "0")} of {levers.length}</div><h3>{l.name}</h3><p>{l.what.split(". ")[0]}.</p>{[<LeverFound key="f" />, <LeverChosen key="c" />, <LeverConverted key="v" />, <LeverRemembered key="r" />][i]}</div>
