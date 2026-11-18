@@ -47,8 +47,8 @@
       "stat": "97% of valid llms.txt files received zero requests in May 2026, across 137,210 domains",
       "source": "Ahrefs server-log study, Jun 2026 · vendor data",
       "url": "https://ahrefs.com/blog/llmstxt-study/",
-      "asOf": "2026-08-02",
-      "validUntil": "2026-11-02"
+      "asOf": "2026-11-18",
+      "validUntil": "2027-02-18"
     },
     {
       "id": "agent-ready",
@@ -60,11 +60,11 @@
     },
     {
       "id": "claude-code-markdown",
-      "stat": "Claude Code requested Markdown 76% of the time via Accept-header content negotiation; agent requests (268K) exceeded human pageviews (107K) on a developer-audience site",
-      "source": "Evil Martians server logs, May–Jul 2026",
+      "stat": "Claude Code asked for Markdown 88% of the time via Accept-header content negotiation; agents fetching for a person made 61,700 requests against 84,000 human pageviews on a developer-audience site, Sep–Oct 2026",
+      "source": "Evil Martians server logs, Sep–Oct 2026",
       "url": "https://evilmartians.com/chronicles/which-ai-actually-reads-your-site-two-months-of-llm-traffic-measured",
-      "asOf": "2026-08-02",
-      "validUntil": "2026-11-02"
+      "asOf": "2026-11-18",
+      "validUntil": "2027-02-18"
     },
     {
       "id": "seven-runs",

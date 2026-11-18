@@ -15,7 +15,7 @@ For 2–20 person teams with a working product, docs, an API, and no marketing h
 
 **89.3% vs 49.3%**: strict task success for browser agents on an agent-ready site against a human-oriented baseline. Three models, 300 runs.
 
-**76%**: how often Claude Code asked for Markdown via the Accept header on a developer-audience site whose server logs were published. Agent requests on that site (268K) exceeded human pageviews (107K).
+**88%**: how often Claude Code asked for Markdown via the Accept header on a developer-audience site whose server logs were published. On that site, agents fetching pages for a person made three requests for every four human pageviews (61,700 against 84,000, September to October 2026).
 
 **Up to 45%**: how often LLMs reach for a widely-adopted library in cases where it is not required. For a new tool, the model's prior is a headwind. Getting a model to name your library in prose is a different and much easier outcome than getting it to write your library into generated code, and only the second drives installs. A report from us keeps the two apart.
 
